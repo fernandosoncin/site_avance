@@ -1585,7 +1585,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #9a9a9a;
+		/* color: #9a9a9a; */
 		font-family: "Raleway", Arial, Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
@@ -1633,7 +1633,7 @@
 		}
 
 	a {
-		color: #5385c1;
+		color: #062635;
 		text-decoration: underline;
 	}
 
@@ -1655,7 +1655,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #5385c1;
+		color: #062635;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -1787,7 +1787,7 @@
 		padding: 6em 0;
 	}
 
-		section.wrapper header, article.wrapper header {
+		 article.wrapper header {
 			margin-bottom: 4em;
 		}
 
@@ -1805,7 +1805,7 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #5385c1;
+			background: #062635;
 			color: #bacee6;
 		}
 
@@ -1930,6 +1930,9 @@
 
 		@media screen and (max-width: 980px) {
 
+			.logo{
+				display:none;
+			}
 			.flex.flex-2 article {
 				width: 100%;
 				margin-bottom: 3em;
@@ -2712,28 +2715,37 @@
 /* Header */
 
 	.subpage {
-		padding-top: 44px;
+		/* padding-top: 44px; */
 	}
 
 		.subpage #header {
-			background: #5385c1;
-			top: 0;
-			height: 44px;
-			line-height: 44px;
-			position: fixed;
+			color: #d4e0ef;
+		cursor: default;
+		/* height: 3.25em; */
+		left: 0;
+		line-height: 3.25em;
+		/* position: absolute; */
+		background: #062635;
+		text-align: right;
+		/* top: 4em; */
+		width: 100%;
+		z-index: 10001;
+		padding: 0.5em;
 		}
 
 	#header {
 		color: #d4e0ef;
 		cursor: default;
-		height: 3.25em;
+		/* height: 3.25em; */
 		left: 0;
 		line-height: 3.25em;
-		position: absolute;
+		/* position: absolute; */
+		background: #062635;
 		text-align: right;
 		top: 4em;
 		width: 100%;
 		z-index: 10001;
+		padding: 0.5em;
 	}
 
 		#header .inner {
@@ -2753,6 +2765,7 @@
 			position: absolute;
 			top: 0;
 			font-size: 1em;
+			width: 100px;
 		}
 
 		#header a {
@@ -2940,11 +2953,10 @@
 		/*background-attachment: fixed;*/
 		background-repeat: no-repeat;
 		text-align: center;
-		border-top: 0.5em solid #5385c1;
 	}
 
 		#banner h1 {
-			font-size: 3.5em;
+			font-size: 3em;
 			font-weight: 100;
 			color: #fff;
 			line-height: 1em;
