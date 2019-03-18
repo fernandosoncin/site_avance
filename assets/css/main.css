@@ -10,6 +10,8 @@
 
 /* Reset */
 
+	
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1668,7 +1670,7 @@
 
 	h2 {
 		font-size: 1.75em;
-		font-weight: 100;
+		font-weight: 400;
 	}
 
 	h3 {
@@ -1929,9 +1931,13 @@
 		}
 
 		@media screen and (max-width: 980px) {
+			
+			.responsi-img{
+				width: 60% !important;
+			}
 
 			.logo{
-				display:none;
+				display:none !important;
 			}
 			.flex.flex-2 article {
 				width: 100%;
@@ -2031,8 +2037,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #5385c1;
-			box-shadow: 0 0 0 1px #5385c1;
+			border-color: #062635;
+			box-shadow: 0 0 0 1px #062635;
 		}
 
 	.select-wrapper {
@@ -2142,8 +2148,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #5385c1;
-			box-shadow: 0 0 0 1px #5385c1;
+			border-color: #062635;
+			box-shadow: 0 0 0 1px #062635;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2566,21 +2572,9 @@
 		white-space: nowrap;
 	}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #676767;
-		}
+		
 
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		button:active,
-		.button:active {
-			background-color: #4d4d4d;
-		}
+		
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
@@ -2663,7 +2657,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #062635;
 			color: #ffffff !important;
 		}
 
@@ -2672,7 +2666,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #6692c8;
+				background-color: #9a9a9a;
 			}
 
 			input[type="submit"].special:active,
@@ -2680,7 +2674,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #4278b8;
+				background-color: #062635;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2868,7 +2862,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #5385c1;
+		background: #062635;
 		color: #d4e0ef;
 		height: 100%;
 		max-width: 80%;
@@ -2946,13 +2940,14 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
+		/* padding: 12em 0 18em 0; */
+		/* background-image: url('../../images/banner_avance.png'); */
 		background-size: cover;
 		background-position: top;
 		/*background-attachment: fixed;*/
 		background-repeat: no-repeat;
 		text-align: center;
+		
 	}
 
 		#banner h1 {
@@ -2980,8 +2975,8 @@
 
 		@media screen and (max-width: 1280px) {
 
-			#banner {
-				padding: 10em 2em 8em 2em;
+			/* #banner {
+				padding: 10em 2em 8em 2em */
 			}
 
 		}
@@ -2997,7 +2992,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 8em 1.5em 6em 1.5em;
+				/* padding: 8em 1.5em 6em 1.5em; */
 			}
 
 				#banner h1 {
@@ -3013,7 +3008,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 6em 1.5em 4em 1.5em;
+				/* padding: 6em 1.5em 4em 1.5em; */
 			}
 
 		}
@@ -3021,12 +3016,12 @@
 /* Footer */
 
 	#footer .inner {
-		border-top: 1px solid #dbdbdb;
+		border-top: 1px solid #ffffff;
 		padding-top: 3em;
 	}
 
 	#footer .copyright {
-		color: #bbb;
+		color: #062635;
 		font-size: 0.8em;
 		margin: 0 0 2em 0;
 		padding: 0;
@@ -3043,7 +3038,7 @@
 			}
 
 	#footer ul.icons li .icon {
-		font-size: 0.58em;
+		font-size: 0.70em;
 	}
 
 	@media screen and (max-width: 736px) {
